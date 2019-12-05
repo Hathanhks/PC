@@ -1,0 +1,18 @@
+<script>
+         function toDataURL(url) {
+            var httpRequest = new XMLHttpRequest();
+            httpRequest.onload = function() {
+               var fileReader = new FileReader();
+                  fileReader.onloadend = function() {
+                     //callback(fileReader.result);
+					 return fileReader.result;
+                  }
+                  fileReader.readAsDataURL(httpRequest.response);
+            };
+            httpRequest.open('GET', url);
+            httpRequest.responseType = 'blob';
+            httpRequest.send();
+         }
+		 
+         document.write('Result in string:', toDataURL('http://thietkevinhhung.com/Catalogue_Tab/2_min.txt'));
+      </script>
