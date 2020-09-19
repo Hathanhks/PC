@@ -16076,15 +16076,14 @@ var CanvasGraphics = function CanvasGraphicsClosure() {
     },
     paintJpegXObject: function CanvasGraphics_paintJpegXObject(objId, w, h) {
       var domImage = this.processingType3 ? this.commonObjs.get(objId) : this.objs.get(objId);
-alert(JSON.stringify(domImage);
       if (!domImage) {
         (0, _util.warn)('Dependent image isn\'t ready yet');
         return;
       }
-
       this.save();
       var ctx = this.ctx;
       ctx.scale(1 / w, -1 / h);
+alert(JSON.stringify(domImage);
       ctx.drawImage(domImage, 0, 0, domImage.width, domImage.height, 0, -h, w, h);
 
       if (this.imageLayer) {
