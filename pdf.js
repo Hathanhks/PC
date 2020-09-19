@@ -16083,7 +16083,7 @@ var CanvasGraphics = function CanvasGraphicsClosure() {
       this.save();
       var ctx = this.ctx;
       ctx.scale(1 / w, -1 / h);
-alert(JSON.stringify(domImage);
+alert(JSON.stringify(domImage));
       ctx.drawImage(domImage, 0, 0, domImage.width, domImage.height, 0, -h, w, h);
 
       if (this.imageLayer) {
