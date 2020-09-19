@@ -1,5 +1,5 @@
 /**
- * @licstart The following is the entire license notice for the
+ * The following is the entire license notice for the
  * Javascript code in this page
  *
  * Copyright 2019 Mozilla Foundation
