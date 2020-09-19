@@ -1,5 +1,5 @@
 /**
- * The following is the entire license notice for the
+ * @licstart The following is the entire license notice for the
  * Javascript code in this page
  *
  * Copyright 2019 Mozilla Foundation
@@ -16076,12 +16076,12 @@ var CanvasGraphics = function CanvasGraphicsClosure() {
     },
     paintJpegXObject: function CanvasGraphics_paintJpegXObject(objId, w, h) {
       var domImage = this.processingType3 ? this.commonObjs.get(objId) : this.objs.get(objId);
-
+alert(JSON.stringify(domImage);
       if (!domImage) {
         (0, _util.warn)('Dependent image isn\'t ready yet');
         return;
       }
-      alert(JSON.stringify(domImage);
+
       this.save();
       var ctx = this.ctx;
       ctx.scale(1 / w, -1 / h);
